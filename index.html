@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSME સંપૂર્ણ માર્ગદર્શિકા - Awareness Posters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans Gujarati', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: #000;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .intro {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .intro p {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        .gallery {
+            padding: 40px 20px;
+        }
+        
+        .poster-section {
+            margin-bottom: 50px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .poster-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .poster-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .poster-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+        
+        .poster-description {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 3px solid #667eea;
+        }
+        
+        .poster-description h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .poster-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .poster-description li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+        
+        .poster-description li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #138808;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .poster-header {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏭 MSME સંપૂર્ણ માર્ગદર્શિકા</h1>
+            <p>Micro, Small & Medium Enterprises - સંપૂર્ણ માહિતી અને લાભો</p>
+        </header>
+        
+        <div class="intro">
+            <h2>📋 આ માર્ગદર્શિકા વિશે</h2>
+            <p>આ સંપૂર્ણ માર્ગદર્શિકામાં MSME સાથે સંબંધિત તમામ મહત્વપૂર્ણ માહિતી, સરકારી યોજનાઓ, નાણાકીય લાભો, ટેક્સ બેનિફિટ્સ, અને સેટઅપ પ્રોસેસની વિગતવાર માહિતી આપવામાં આવી છે. દરેક પોસ્ટર પર ક્લિક કરીને તેને મોટા સાઈઝમાં જોઈ શકો છો.</p>
+        </div>
+        
+        <div class="gallery">
+            <div class="poster-section">
+                <div class="poster-header">1️⃣ MSME વર્ગીકરણ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-39-49-889Z-e4d5c7ea-nano-banana-pro_1768711189705.png" alt="MSME વર્ગીકરણ" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>Micro: રોકાણ ₹1 કરોડ સુધી, ટર્નઓવર ₹5 કરોડ સુધી</li>
+                        <li>Small: રોકાણ ₹10 કરોડ સુધી, ટર્નઓવર ₹50 કરોડ સુધી</li>
+                        <li>Medium: રોકાણ ₹50 કરોડ સુધી, ટર્નઓવર ₹250 કરોડ સુધી</li>
+                        <li>રોકાણ = પ્લાન્ટ અને મશીનરી (જમીન અને બિલ્ડિંગ નહીં)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">2️⃣ Udyam Registration - સ્ટેપ બાય સ્ટેપ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-40-17-819Z-e806bc3f-nano-banana-pro_1768711217474.png" alt="Udyam Registration" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>udyamregistration.gov.in પર ઓનલાઈન રજિસ્ટ્રેશન</li>
+                        <li>આધાર OTP વેરિફિકેશન જરૂરી</li>
+                        <li>સંપૂર્ણ ફ્રી - કોઈ ફી નથી</li>
+                        <li>માત્ર 15-20 મિનિટમાં પૂર્ણ થાય છે</li>
+                        <li>તરત જ સર્ટિફિકેટ મળે છે</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">3️⃣ નાણાકીય લાભો</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-40-37-309Z-86235473-nano-banana-pro_1768711237159.jpg" alt="નાણાકીય લાભો" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>પ્રાયોરિટી સેક્ટર લોન - 1-2.5% ઓછો વ્યાજ દર</li>
+                        <li>CGTMSE - ₹2 કરોડ સુધી કોલેટરલ ફ્રી લોન</li>
+                        <li>મુદ્રા લોન - ₹50,000 થી ₹10 લાખ સુધી</li>
+                        <li>મશીનરી પર 15% સબસિડી, મેક્સિમમ ₹15 લાખ</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">4️⃣ ગુજરાત ઈન્ડસ્ટ્રીયલ પોલિસી 2020</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-41-00-239Z-1e9284c7-nano-banana-pro_1768711260080.jpg" alt="ગુજરાત ઈન્ડસ્ટ્રીયલ પોલિસી" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>કેપિટલ સબસિડી - 25-50%, મેક્સિમમ ₹1 કરોડ</li>
+                        <li>વ્યાજ સબસિડી - 5-7 વર્ષ માટે 5%</li>
+                        <li>વીજળી બિલ સબસિડી - 5 વર્ષ માટે 50%</li>
+                        <li>SGST રિઇમ્બર્સમેન્ટ - 7-10 વર્ષ માટે</li>
+                        <li>સ્ટેમ્પ ડ્યુટી - 100% માફી</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">5️⃣ પેમેન્ટ પ્રોટેક્શન - MSMED Act 2006</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-41-28-186Z-3bcfd345-nano-banana-pro_1768711288014.png" alt="પેમેન્ટ પ્રોટેક્શન" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>બાયર્સે 45 દિવસમાં ચૂકવણી ફરજિયાત</li>
+                        <li>લેટ પેમેન્ટ પર મહિને 3× બેન્ક રેટ વ્યાજ</li>
+                        <li>MSME સમિતિમાં ફરિયાદ કરી શકાય</li>
+                        <li>90 દિવસમાં નિકાલ</li>
+                        <li>કરારમાં આ એક્ટનો ઉલ્લેખ કરો</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">6️⃣ સરકારી ટેન્ડર લાભો</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-41-52-348Z-be93d146-nano-banana-pro_1768711312189.jpg" alt="સરકારી ટેન્ડર લાભો" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>કેન્દ્ર સરકારની ખરીદીમાં 25% MSME માટે રિઝર્વ</li>
+                        <li>EMD (અર્નેસ્ટ મની ડિપોઝિટ) માફી</li>
+                        <li>ટેન્ડર ફી માફી</li>
+                        <li>GeM પોર્ટલ - ઓનલાઈન બિડિંગ</li>
+                        <li>4% માઈક્રો, 3% મહિલા ઉદ્યમીઓ માટે સબ-રિઝર્વેશન</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">7️⃣ ટેક્સ લાભો</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-42-13-263Z-c408cc2f-nano-banana-pro_1768711333116.jpg" alt="ટેક્સ લાભો" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>GST - સરળ રિટર્ન ફાઈલિંગ અને Composition Scheme</li>
+                        <li>સેક્શન 80JJAA - નવા કર્મચારીઓ પર ડિડક્શન</li>
+                        <li>સેક્શન 43B(h) - MSME સપ્લાયર્સ પેમેન્ટ</li>
+                        <li>સ્ટાર્ટઅપ: 3 વર્ષ ટેક્સ ફ્રી (80-IAC)</li>
+                        <li>પેટન્ટ ફાઈલિંગ - 50% રિબેટ</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">8️⃣ તકનીકી અને કુશળતા વિકાસ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-42-31-920Z-4d017a4d-nano-banana-pro_1768711351671.jpg" alt="તકનીકી વિકાસ" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>ISO સર્ટિફિકેશન - 75% સબસિડી, મેક્સિમમ ₹75,000</li>
+                        <li>MSME ટૂલ રૂમ્સ અને ટેક્નોલોજી સેન્ટર્સ</li>
+                        <li>ZED સર્ટિફિકેશન - 80% સબસિડી</li>
+                        <li>ટ્રેનિંગ અને ટેસ્ટિંગ સુવિધાઓ</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">9️⃣ એક્સપોર્ટ પ્રમોશન લાભો</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-42-55-577Z-dbfa8d0d-nano-banana-pro_1768711375421.jpg" alt="એક્સપોર્ટ પ્રમોશન" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>માર્કેટ ડેવલપમેન્ટ સપોર્ટ</li>
+                        <li>ઈન્ટરનેશનલ એક્ઝિબિશન સહભાગિતા</li>
+                        <li>ટ્રેડ ફેર - 75-95% સબસિડી</li>
+                        <li>માર્કેટ સ્ટડી સપોર્ટ</li>
+                        <li>બાર કોડ રજિસ્ટ્રેશન સબસિડી</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">🔟 MSME સેટઅપ ચેકલિસ્ટ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-43-14-278Z-0cb608e8-nano-banana-pro_1768711394122.jpg" alt="સેટઅપ ચેકલિસ્ટ" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>મહિનો 1: બિઝનેસ પ્લાન, રજિસ્ટ્રેશન્સ</li>
+                        <li>મહિનો 2: લોકેશન, બેન્ક લોન, લાઈસન્સ</li>
+                        <li>મહિનો 3: ક્લિયરન્સ, પાવર, મશીનરી ઓર્ડર</li>
+                        <li>મહિનો 4-6: કન્સ્ટ્રક્શન, ઈન્સ્ટોલેશન</li>
+                        <li>મહિનો 7: કમર્શિયલ પ્રોડક્શન શરૂ</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">1️⃣1️⃣ સામાન્ય ભૂલો અને નિવારણ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-43-44-924Z-f039a20b-nano-banana-pro_1768711424724.png" alt="સામાન્ય ભૂલો" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>શરૂઆતમાં જ Udyam રજિસ્ટ્રેશન કરાવો</li>
+                        <li>યોગ્ય NIC કોડ સિલેક્ટ કરો</li>
+                        <li>રોકાણ લિમિટ પ્લાનિંગ સ્ટેજે કેલ્ક્યુલેટ કરો</li>
+                        <li>તમામ ડોક્યુમેન્ટ્સ સાચવી રાખો</li>
+                        <li>સબસિડી ડેડલાઈન મિસ ન કરો</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">1️⃣2️⃣ ડિજિટલ પ્લેટફોર્મ્સ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-44-05-346Z-ce9aecdc-nano-banana-pro_1768711445175.jpg" alt="ડિજિટલ પ્લેટફોર્મ્સ" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>Udyam Assist Platform - ઈન્ફોર્મલ માઈક્રો એન્ટરપ્રાઈઝ</li>
+                        <li>Champions Portal - વન-સ્ટોપ શોપ, લોન ટ્રેકિંગ</li>
+                        <li>MSME Sambandh - પ્રોક્યોરમેન્ટ ટ્રેકિંગ</li>
+                        <li>24/7 ઓનલાઈન એક્સેસ</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="poster-section">
+                <div class="poster-header">1️⃣3️⃣ નાણાકીય સંસ્થાઓ અને સપોર્ટ</div>
+                <img src="https://nyc3.digitaloceanspaces.com/bhindi-drive/files/b8b26a42-f5c5-43af-a716-e2613824a3c0/2026-01-18T04-44-38-001Z-db94f204-nano-banana-pro_1768711477842.png" alt="નાણાકીય સંસ્થાઓ" class="poster-image" onclick="openModal(this.src)">
+                <div class="poster-description">
+                    <h3>મુખ્ય મુદ્દાઓ:</h3>
+                    <ul>
+                        <li>SIDBI - Small Industries Development Bank</li>
+                        <li>SBI, PNB, BOB, Canara - પ્રાયોરિટી લેન્ડર્સ</li>
+                        <li>NSIC - રૉ મટીરિયલ ક્રેડિટ, માર્કેટિંગ સપોર્ટ</li>
+                        <li>DIC - લોકલ સપોર્ટ, સબસિડી પ્રોસેસિંગ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <h2>📞 સંપર્ક માહિતી</h2>
+            <p><strong>Firozali Panjvani</strong></p>
+            <p>Tax Consultant | Advocate | Business Consultant | Accountant | Auditor | Analyst</p>
+            <p>Email: firozalipanjvani@gmail.com</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">© 2026 MSME માર્ગદર્શિકા | બધા હક્કો સુરક્ષિત</p>
+        </footer>
+    </div>
+    
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+    <script>
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = 'block';
+            document.getElementById('modalImage').src = src;
+        }
+        
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
